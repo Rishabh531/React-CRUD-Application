@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state={
-      title: 'React Simple CRUD Application',
+      title: 'SIMPLE REACT CRUD APPLICATION',
       act: 0,
       index: '',
       datas: []
@@ -73,7 +73,7 @@ class App extends Component {
     let datas = this.state.datas;
     return (
       <div className="App">
-        <h2>{this.state.title}</h2>
+        <h2 className='title'>{this.state.title}</h2>
         <form ref="myForm" className="myForm">
           <input type="text" ref="name" placeholder="your name" className="formField" />
           <input type="text" ref="address" placeholder="your address" className="formField" />
