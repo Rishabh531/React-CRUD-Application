@@ -25,12 +25,12 @@ class App extends Component {
     let name = this.refs.name.value;
     let address = this.refs.address.value;
 
-    if(this.state.act === 0){   //new
+    if(this.state.act === 0){   
       let data = {
         name, address
       }
       datas.push(data);
-    }else{                      //update
+    }else{                     
       let index = this.state.index;
       datas[index].name = name;
       datas[index].address = address;
